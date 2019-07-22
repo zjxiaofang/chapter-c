@@ -5,14 +5,16 @@
 
 int search(const int v[], int key, int n)
 {
+    //for (int i = 0; i < n; ++i)
+        //if (v[i] == key) return i;
     int i = 0;
-    while (1) {
-        if (i == n)
-            return FAILED;  
+    while(1){
         if (v[i] == key)
-            return i;  
+            return i;
+        if (i==n)
+            return FAILED;
         i++;
-    }
+    } 
 }
 
 int main(void)

@@ -14,8 +14,8 @@ int main(void)
 
     for (i = 1; i <= len; i++)
     {
-        put_chars(' ', len - i);
-        put_chars('*', i);
+        put_chars(' ',len - i);
+        putchars('*',i);
         putchar('\n');
     }
 

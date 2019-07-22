@@ -1,36 +1,29 @@
 #include <stdio.h>
 
-/*返回输入的正整数*/
-int scan_pint(void)
+int scan_pint(void) {
+    int temp;
+
+    do{
+        printf("输入一个正整数");
+        scanf("%d",&temp);
+        if(temp<1) printf("重新输入");
+    }while(temp<1);
+
+    return temp;
+    }
+
+int rev_int(int nx)
 {
-    int tmp;
-
-    do {
-        printf("请输入一个正整数：");
-        scanf("%d", &tmp);
-        if (tmp <= 0)
-            puts("请不要输入非正数！！！");
-    } while (tmp <= 0);
-
-    return tmp;
+    int a=0;
+    while(nx){
+        a = a*10 + nx%10;
+        nx/=10;
+    }
+    return a;
 }
 
-/*返回正整数倒转后的值*/
-int rev_int(int num)
-{
-    int tmp = 0;
-    
-     while (num > 0){
-            tmp = tmp*10 + num % 10;
-            num /= 10;
-        }
-    
-    return tmp;
-}
-
-int main(void)
-{
-    int nx = scan_pint();//不赋予实参
+int main(void) {
+    int nx = scan_pint();
     printf("该整数倒转后的值是%d。\n", rev_int(nx));
     return 0;
 }

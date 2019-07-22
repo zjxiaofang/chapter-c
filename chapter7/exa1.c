@@ -1,7 +1,19 @@
 #include <stdio.h>
-int main(void)
-{
-puts("在很久很久以前有个地方住着一位老公公和一位老婆婆" "老公公深深地爱着老婆婆。");
+#include <limits.h>
 
-	return 0;
+int main(void) {
+    puts("该环境下各字符型、整型数值的范围");
+    printf("char:%d~%d\n", CHAR_MIN, CHAR_MAX);
+    printf("signed char:%d~%d\n", SCHAR_MIN, SCHAR_MAX);
+    printf("unsigned char:%d~%d\n", 0, UCHAR_MAX);
+
+    printf("short          :%d~%d\n", SHRT_MIN, SHRT_MAX);
+    printf("int            :%d~%d\n", INT_MIN, INT_MAX);
+    printf("long           :%ld~%ld\n", LONG_MIN, LONG_MAX);
+
+    printf("unsigned short :%u~%d\n", 0, USHRT_MAX);
+    printf("unsigned       :%u~%u\n", 0, UINT_MAX);
+    printf("unsigned long  :%lu~%lu\n", 0l, ULONG_MAX);
+
+    return 0;
 }

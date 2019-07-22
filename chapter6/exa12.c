@@ -19,7 +19,7 @@ void print_array(const int v[], int n)
 int main(void)
 {
     int ary1[] = {1, 2, 3, 4, 5};
-    int ary2[] = {3, 2, 1};
+    int ary2[] = {3,2,1};
 
     printf("ary1 = "); print_array(ary1, 5); putchar('\n');
     printf("ary2 = "); print_array(ary2, 3); putchar('\n');

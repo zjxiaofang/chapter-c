@@ -1,19 +1,15 @@
 #include <stdio.h>
 
-/*返回x的n次幂*/
-double power(double x, int n)
-{
+double power(double x, int n) {
     double tmp = 1.0;
 
-    while(n--)
-        tmp*=x;
+    while (n--)
+        tmp = tmp * x;
 
     return tmp;
 }
 
-
-int main(void)
-{
+int main(void) {
     double a;
     int b;
 

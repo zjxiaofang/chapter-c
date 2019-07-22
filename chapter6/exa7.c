@@ -2,7 +2,7 @@
 
 void put_stars(int n)
 {
-    while (n-- > 0)
+    while(n--)
         putchar('*');
 }
 

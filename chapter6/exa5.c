@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 double power(double a,int b){
-    int i,temp =1;
-    for (int i = 0; i < b; ++i)
-    {
-        temp*=a;
-    }
+   int i;int temp =1;
+   for (int i = 0; i < b; ++i)
+   {
+       temp*=a;
+   }
     return temp;
 }
 
