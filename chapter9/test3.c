@@ -1,34 +1,23 @@
 #include <stdio.h>
+#include <string.h>
 #define NUMBER 4
 
 int main(void)
 {
-    int i;int j = 0;
+    int i;int end;
     char s[NUMBER][128];
+    char str[] = "$$$$$";
 
-    for (i = 0; i < NUMBER; i++) {
-        printf("s[%d] : ", i);
-        scanf("%s", s[i]);
+    for (int i = 0; i < NUMBER; ++i)
+    {
+        printf("输入%d字符串",i);
+        scanf("%s",s[i]);
+        if (strcmp(s[i],str)){
+            end = i;
+        }
     }
-
-    for (i = 0; i < NUMBER; i++)
-
+    for (i = 0; i < end; i++)
         printf("s[%d] = \"%s\"\n", i, s[i]);
-    
     return 0;
 }
 
-/*
-char buf[1024];
-    while(!gets(buf))
-    {
-        char *substr = 0;
-        if(substr = strstr(buf, "$$$"))
-        {
-            *substr = '\0';
-            printf(buf);
-            break;
-        }
-        else
-            printf(buf);
-    }

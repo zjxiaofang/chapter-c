@@ -2,15 +2,11 @@
 int main(void)
 {
 	char s[] = "ABC";
-		printf("%.0s\n", s);
+		printf("%s\n", s);
 
-	char a[] = "";
-	for (int i = 0; i < 3; ++i)
-	{
-		s[i]=a[i];
-	}
-	printf("%s\n", s);
-	printf("%lu\n",sizeof(a) );
+	s[0] = '\0';
+	printf("字符串s为%s\n", s);
+	printf("%lu\n", sizeof(s));
 
 	return 0;
 }
