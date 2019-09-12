@@ -1,0 +1,100 @@
+* {
+	margin-left: 0px;
+	margin-top: 0px;
+	padding: 0px;
+}
+#container {
+	width: 860px;
+	height: 1050px;
+	margin: auto;
+	box-shadow: 0 15px 20px 23px rgba(0, 0, 0, 0.12);
+}
+#main {
+	width: 700px;
+	height: 1050px;
+	margin: auto;
+}
+header {
+	width: 700px;
+	height: 102px;
+	border-bottom: 3px solid #DADADA;
+	padding-top: 48px;
+}
+#headtop {
+	background: url(phone.png) no-repeat right center;
+	height: 58px;
+	font-family: PingFangSC-Semibold;
+	font-size: 30px;
+	letter-spacing: 3px;
+}
+#headbottom {
+	background: url(letter.png) no-repeat right center;
+	font-family: PingFangSC-Semibold;
+	font-size: 20px;
+	color: #9B9B9B;
+	letter-spacing: 2px;
+}
+#headtop>p {
+	padding-top: 24px;
+}
+#headbottom>p {
+	padding-top: 10px;
+}
+#headtop>p, #headbottom>p {
+	float: right;
+	padding-right: 30px;
+}
+#profile {
+	width: 400px;
+	height: 118px;
+	float: left;
+	margin-top: 36px;
+}
+#img1 {
+	width: 134px;
+	height: 134px;
+	margin-top: 36px;
+	margin-right: 40px;
+	float: right;
+}
+#experience {
+	width: 400px;
+	height: 630px;
+	margin-top: 66px;
+	float: left;
+}
+#education {
+	width: 230px;
+	height: 252px;
+	margin-top: 50px;
+	float: right;
+}
+#skills {
+	width: 230px;
+	height: 242px;
+	margin-top: 11px;
+	float: right;
+}
+h1 {
+	margin-top: 0px;
+	font-family: PingFangSC-Semibold;
+	font-size: 24px;
+	color: #4A4A4A;
+	letter-spacing: 2px;
+	background: #F2F2F2;
+}
+h2 {
+	margin-top: -8px;
+	font-family: PingFangSC-Semibold;
+	font-size: 16px;
+	color: #4A4A4A;
+	letter-spacing: 0.8px;
+	text-align: justify;
+}
+#headtop>p,#headbottom>p,#profile>p,#experience>p,#education>p,#skills>p{
+	margin-top: -5px;
+	font-family: PingFangSC-Semibold;
+	font-size: 16px;
+	color: #9B9B9B;
+	letter-spacing: 0.8px;
+}
