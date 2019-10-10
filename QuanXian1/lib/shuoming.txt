@@ -1,0 +1,17 @@
+DROP TABLE IF EXISTS `account`;
+CREATE TABLE `account` (
+ `accountNumber` Integer NOT NULL auto_increment,
+  `accountName` varchar(30) NOT NULL,
+  `accountPassword` varchar(20) NOT NULL,
+  `accountType` smallint(6) NOT NULL,
+ 
+  `managerID` Integer default NULL,
+  `accountState` smallint(6) NOT NULL,
+  PRIMARY KEY  (`accountNumber`)
+)  ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+insert into account values(101,'a','123',1,101,1),(102,'b','123',2,102,1),(103,'c','123',3,103,1),(104,'d','123',4,104,1);
+
+
+//accountType 1代表超级管理员，2代表库存管理员，3代表销售员。
